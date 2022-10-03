@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Experiment 4</title>
+</head>
+<body>
+    <button class="btn btn-primary" onclick="displayDate()" style="margin:20px">Display Date</button>
+    <br>
+    <script>
+        function displayDate(){
+            var d = new Date();
+            const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            const monthNames = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+            ];
+            alert("Time : " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds()
+            + "\n" + "Day : " + weekday[d.getDay()] + "\nDate : " + monthNames[d.getMonth()] + " " +
+            d.getDate() + ", " +d.getFullYear());
+        }
+    </script>
+</body>
+</html>

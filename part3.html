@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Experiment 4</title>
+</head>
+<body>
+    <label style="margin:20px;">Enter Temperature in Celsius : </label>
+    <input type="text" name="temperature" id="temp" style="margin:20px;">
+    <br>
+    <button class="btn btn-primary" onclick="convertTemperature()" style="margin:20px;">Convert</button>
+    <script>
+        function convertTemperature(){
+            var num = document.getElementById("temp").value;
+            var ans = 1.8 * parseFloat(num) + 32;
+            alert("Temperature in Fahrenheit : " + ans);            
+        }
+    </script>
+</body>
+</html>
